@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AWS SA-Assoc quiz</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="grid.css">
+</head>
+<body>
+	<div class='row js-startPage'>
+		<div class='col-5 start'>
+			<h1>AWS Solution Architect - Associate Quiz</h1>
+			<button class= 'js-start hover'>Start</button>
+		</div>
+	</div>
+	<div class='row hidden' id='question-container'>
+		<section class = 'question-container col-8'>
+			<p class="question">Which of the following describes a physical location around the world where AWS clusters data centers?</p><br>
+			<button class='button0 js-answer hover' value ='0'>Endpoint</button><br>
+			<button class='button1 js-answer hover' value ='1'>Collection</button><br>
+			<button class='button2 js-answer hover' value ='2'>Fleet</button><br>
+			<button class='button3 js-answer hover' value ='3'>Region</button>
+		</section>
+	</div>
+	<div class='row'>
+		<div class = 'continue-container col-8'>
+			<div class='positionLeft'>
+				<span class='js-count'>Question: 1/10</span><br>
+				<span class='js-score'>Correct: 0/0</span>
+			</div>
+			<button class='continue js-continue hidden'>continue</button>
+		</div>
+	</div>
+		<div class='row response-row'>
+		<div class = 'col-12'>
+			<div class='result'>
+				<span class='response1'></span><br>
+			</div>
+		</div>
+	</div>
+
+<!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
