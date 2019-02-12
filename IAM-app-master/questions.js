@@ -1,0 +1,18 @@
+function Question(question, ans1, ans2, ans3, ans4, correct) {
+  this.question = question;
+  this.answers = [ans1, ans2, ans3, ans4];
+  this.answerCorrect = correct;
+}
+
+var q1 = new Question('Which of the following describes a physical location around the world where AWS clusters data centers?', 'Endpoint', 'Collection', 'Fleet', 'Region', 4);
+var q2 = new Question('Each AWS region is composed of two or more locations that offer organizations the ability to operate production systems that are more highly available, fault tolerant, and scalable than would be possible using a single data center. What are these locations called?', 'Availability Zones', 'Replication areas', 'Geographic districts', 'Compute centers', 1);
+var q3 = new Question('What is the deployment term for an environment that extends an existing on-premises infrastructure into the cloud to connect cloud resources to internal systems?', 'All-in deployment', 'Hybrid deployment', 'On-premises deployment', 'Scatter deployment', 2);
+var q4 = new Question('Which AWS Cloud service allows organizations to gain system-wide visibility into resource utilization, application performance, and operational health?', 'AWS Identity and Access Management (IAM)', 'Amazon Simple Notification Service (Amazon SNS)', 'Amazon CloudWatch', 'AWS CloudFormation', 3);
+var q5 = new Question('Which of the following AWS Cloud services is a fully managed NoSQL database service?', 'Amazon Simple Queue Service (Amazon SQS)', 'Amazon DynamoDB', 'Amazon ElastiCache', 'Amazon Relational Database Service (Amazon RDS)', 2);
+var q6 = new Question('Your company experiences fluctations in traffic patterns to their e-commerce website based on flash sales. What service can help your company dynamically match the required compute capacity to the spike in traffic during flash sales?', 'Auto Scaling', 'Amazon Glacier', 'Amazon Simple Notification Service (Amazon SNS)', 'Amazon Virtual Private Cloud (Amazon VPC)', 1);
+var q7 = new Question('Your company provides an online photo sharing service. The development team is looking for ways to deliver image files with the lowest latency to end users so the website content is delivered with the best possible performance. What service can help speed up distribution of these image files to end users around the world?', 'Amazon Elastic Compute Cloud (Amazon EC2)', 'Amazon Route 53', 'AWS Storage Gateway', 'Amazon CloudFront', 4);
+var q8 = new Question('Your company runs an Amazon EC2 instance periodically to perform a batch processing job on a large and growing filesystem. At the end of the batch job, you shut down the Amazon EC2 instance to save money but need to persist the filesystem on the Amazon EC2 instance from the previous batch runs. What AWS Cloud service can you leverage to meet these requirements?', 'Amazon EBS', 'Amazon DynamoDB', 'Amazon Glacier', 'AWS CloudFormation', 1);
+var q9 = new Question('What AWS Cloud service provides a logically isolated section of the AWS Cloud where organizations can launch AWS resources in a virtual network that they define?', 'Amazon Simple Workflow Service (Amazon SWF)', 'Amazon Route 53', 'Amazon Virtual Private Cloud (Amazon VPC)', 'AWS CloudFormation', 3);
+var q10 = new Question('Your company provides a mobile voting application for a popular TV show, and 5 to 25 million viewers all vote in a 15-second timespan. What mechanism can you use to decouple the voting application from your back-end services that tally the votes?', 'AWS CloudTrail', 'Amazon Simple Queue Service (Amazon SQS)', 'Amazon Redshift', 'Amazon Simple Notification Service (Amazon SNS)', 2);
+
+var list = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
